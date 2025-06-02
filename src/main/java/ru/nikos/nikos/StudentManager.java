@@ -4,7 +4,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class StudentManager implements IStudentManager, IStudentManagerItem, IStudentManagerGrade {
+public class StudentManager implements IStudentManager, IManagerItem, IManagerGrade {
     private ConnectionManager connectionManager;
 
 

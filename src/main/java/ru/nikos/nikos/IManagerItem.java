@@ -2,7 +2,7 @@ package ru.nikos.nikos;
 
 import java.sql.SQLException;
 
-public interface IStudentManagerItem {
+public interface IManagerItem {
     /**
      * Интерфейс IStudentManagerItem
      * @param id

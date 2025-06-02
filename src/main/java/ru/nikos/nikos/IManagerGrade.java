@@ -2,7 +2,7 @@ package ru.nikos.nikos;
 
 import java.sql.SQLException;
 
-public interface IStudentManagerGrade {
+public interface IManagerGrade {
     /**
      * Интерфейс IStudentManagerGrade
      * @param id
