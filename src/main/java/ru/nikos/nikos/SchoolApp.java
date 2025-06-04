@@ -4,7 +4,7 @@ import java.sql.SQLException;
 public class SchoolApp {
     private final StudentManager studentManager;
     private final ConnectionManager connectionManager;
-    private final MenuManager menuManager;
+    private final MainMenu mainMenu;
 
     /**
      * Класс где установлены все соединения моей программы
@@ -14,7 +14,7 @@ public class SchoolApp {
     public SchoolApp() throws SQLException {
         this.connectionManager = createConnectionManager();
         this.studentManager = createStudentManager(connectionManager);
-        this.menuManager = createMenuManager(studentManager);
+        this.mainMenu = createMenuManager(studentManager);
     }
 
     public StudentManager createStudentManager(ConnectionManager connectionManager) throws SQLException {
@@ -25,11 +25,11 @@ public class SchoolApp {
         return new ConnectionManager();
     }
 
-    public MenuManager createMenuManager(StudentManager studentManager) throws SQLException {
-        return new MenuManager(studentManager);
+    public MainMenu createMenuManager(StudentManager studentManager) throws SQLException {
+        return new MainMenu(studentManager);
     }
 
     public void start() throws SQLException {
-        menuManager.start();
+        mainMenu.start();
     }
 }

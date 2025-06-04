@@ -10,7 +10,7 @@ public class MenuGrade {
         this.studentManager = studentManager;
     }
 
-    private boolean choice() throws SQLException {
+    public boolean choice() throws SQLException {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Вы можете работать с оценками ученика");
         System.out.println("Есть выбор методов по работе с оценками");

@@ -10,7 +10,7 @@ public class MenuItem {
         this.studentManager = studentManager;
     }
 
-    private boolean choice() throws SQLException {
+    public boolean choice() throws SQLException {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Вы можете работать с предметами ученика");
         System.out.println("Есть выбор методов по работе с предметами");
@@ -31,6 +31,7 @@ public class MenuItem {
             studentManager.getConnectionManager().getConnection().close();
             return false;
         }
+
         return true;
     }
 }
